@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thêm sinh viên</title>
+    <style>
+        form {
+            width: 600px;
+            height: 500px;
+        }
+        form input,label {
+            display: block;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lập danh sách sinh viên</h1>
+    <form id="form-addsv" action="xemsv.html">
+        <label for="hoten">Họ và tên</label>
+        <input type="text" minlength="2" maxlength="50" id="hoten" name="hoten"  required>
+        <label for="ngaysinh">Ngày sinh</label>
+        <input type="date" name="birthday" id="ngaysinh" required>
+        <label for="diemtb">Điểm trung bình (*)</label>
+        <input type="number" id="diemtb" name="diemtb" min="0" step="0.1" max="10" required>
+        <input type="submit" value="Lưu">
+    </form>
+    <dialog>
+        <h1>SV này có xuất sắc hay không?</h1>
+        <input type="text">
+    </dialog>
+    <script src="addsv.js">
+
+    </script>
+</body>
+</html>

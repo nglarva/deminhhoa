@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Câu 2-cách 2</title>
+    <style>
+        .menu {
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+            background-color: brown;
+            color: aliceblue;
+           
+        }
+        .menu a {
+            text-decoration: none;
+            color: aliceblue;
+            cursor: pointer;
+        }
+        .hidden {
+            display: none;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+    <ul class="menu hidden"></ul>
+    <form action="#" id="form-login">
+        <label for="email">Email</label>
+        <input type="email" id="email" required>
+
+        <label for="password">Mật khẩu</label>
+        <input type="password" id="password" required>
+
+        <input type="submit" value="Đăng nhập" id="submit-btn">
+    </form>
+    <script src="app.js"></script>
+</body>
+</html>
